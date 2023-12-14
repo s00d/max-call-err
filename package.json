@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.4",
-    "@nuxtjs/i18n": "^8.0.0-rc.6",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@^8.0.0-rc.9-28375354.2a7ee97",
     "nuxt": "3.8.2"
   },
   "dependencies": {
