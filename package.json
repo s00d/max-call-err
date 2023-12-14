@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "my-module-playground",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "node --max-old-space-size=12192 node_modules/nuxt/bin/nuxt.js generate"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.0.4",
+    "@nuxtjs/i18n": "^8.0.0-rc.6",
+    "nuxt": "3.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chokidar": "^3.5.3"
+  }
+}
