@@ -6,8 +6,27 @@
 </template>
 <script setup lang="ts">
 import {useI18n, useHead, useNuxtApp} from "#imports";
+import {genJsonLd, genJsonLdScript} from "../composables/genJsonLd";
 const { $i18n } = useNuxtApp();
 
-useHead({ title: $i18n.t("welcome") })
+
+const jsonLdScript = computed(() => {
+  const pageJsonLd = genJsonLd();
+  return genJsonLdScript(
+    [
+      pageJsonLd,
+    ],
+  );
+});
+
+useHead({
+  title: $i18n.t("test.test.title"),
+  meta: [
+    { name: 'description', content:  $i18n.t("test.test.title") }
+  ],
+  script: [
+    jsonLdScript.value,
+  ],
+});
 
 </script>
